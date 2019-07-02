@@ -1,7 +1,20 @@
+:root {
+  --primaryColor: blue;
+}
+
 body {
   margin: 2rem;
 }
 .global {
   color: green;
   text-transform: capitalize;
+}
+.first {
+  letter-spacing: 5px;
+  color: var(--primaryColor);
+}
+/* some other css */
+.second {
+  text-transform: uppercase;
+  color: var(--primaryColor);
 }
