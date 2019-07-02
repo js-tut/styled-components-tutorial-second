@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Title from "./components/Title";
 // inline css
 // app css
 // css variables
@@ -14,6 +15,7 @@ function App() {
       <h2 className="global">global css</h2>
       <h2 className="first">first</h2>
       <h2 className="second">second</h2>
+      <Title />
     </div>
   );
 }
