@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import StyledHeader from "./components/StyledHeader";
+import Alternative from "./components/AlternativeHeader";
 import { DangerButton, SuccessButton } from "./components/PropsButton";
 import { createGlobalStyle } from "styled-components";
 
@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <StyledHeader title="hello from app.js" />
+      <Alternative title="hello from app.js" />
       <DangerButton big>danger button</DangerButton>
       <SuccessButton>success button</SuccessButton>
     </div>
