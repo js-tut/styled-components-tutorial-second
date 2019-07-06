@@ -1,25 +1,14 @@
 import React from "react";
 import "./App.css";
-import Alternative from "./components/AlternativeHeader";
-import { DangerButton, SuccessButton } from "./components/PropsButton";
-import { createGlobalStyle } from "styled-components";
-
-const GlobalStyle = createGlobalStyle`
- * {
-  margin: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-`;
+import Hero from "./components/Hero";
+import img1 from "./images/image-1.jpeg";
+import img2 from "./images/image-2.jpeg";
 function App() {
   return (
     <div>
-      <GlobalStyle />
-      <Alternative title="hello from app.js" />
-      <DangerButton big>danger button</DangerButton>
-      <SuccessButton>success button</SuccessButton>
+      <Hero img={img1} />
+      <Hero img={img2} />
+      <Hero big />
     </div>
   );
 }
