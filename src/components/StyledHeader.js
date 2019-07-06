@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-const StyledHeader = () => {
+const StyledHeader = ({ title }) => {
   return (
     <StyledWrapper>
-      <h1>hello from styled header</h1>
+      <h1>{title}</h1>
       <h2 className="random">another heading</h2>
     </StyledWrapper>
   );
