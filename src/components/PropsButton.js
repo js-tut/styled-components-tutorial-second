@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-const PropsButton = styled.button`
+export const PropsButton = styled.button`
   background: ${props => (props.color ? props.color : "green")};
   color: white;
   padding: 1rem;
   font-size: 2rem;
+  margin: 1rem;
 `;
 
-export default PropsButton;
+export const BigButton = styled(PropsButton)`
+  margin: 0.5rem;
+  text-transform: capitalize;
+  font-size: 3rem;
+`;
