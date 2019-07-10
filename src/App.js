@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
-import { BasicInput, AwesomeInput } from "./components/Inputs";
+import { RedBox, GreenBox } from "./components/Boxes";
 function App() {
   return (
     <div>
-      <BasicInput />
-      <AwesomeInput />
-      <AwesomeInput type="email" placeholder="please enter email" />
+      <RedBox color="red" />
+      <GreenBox color="green" />
     </div>
   );
 }
